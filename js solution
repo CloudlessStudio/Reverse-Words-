@@ -1,0 +1,17 @@
+function reverseWords(str) {
+  // Go for it
+  var ret = ''
+  var split = str.split(' ');
+  //console.log(split);
+  for( var i = 0; i<split.length; i++)
+    {
+     ret += split[i].split('').reverse().join("")
+      if (i != split.length -1)
+       {
+           ret += " ";
+       } 
+    }
+ 
+  console.log(ret);
+  return ret;
+}
